@@ -3,9 +3,9 @@ from langchain_core.prompts import PromptTemplate
 import os
 from langchain.memory import StreamlitChatMessageHistory
 from langchain.memory import ConversationBufferMemory
-from dotenv import load_dotenv
+
 from langchain.chains import LLMChain
-load_dotenv()
+
 groq_api_key=os.environ['GROQ_API_KEY']
 llm=ChatGroq(model="mixtral-8x7b-32768",groq_api_key=groq_api_key)
 
