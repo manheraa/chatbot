@@ -9,7 +9,7 @@ llm=ChatGroq(model="mixtral-8x7b-32768",groq_api_key=groq_api_key)
 
 prompt_template="""
 Use the following piece of context and chat History to answer the question asked.
-Please try to provide the answer only based on the context
+Please try to provide the answer only based on the context and in Step by step manner
 Question:{question}
 
 Helpful Answers:
