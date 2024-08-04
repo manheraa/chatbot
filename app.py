@@ -20,7 +20,7 @@ hist=ConversationBufferMemory(chat_memory=sthistory)
 chain=LLMChain(llm=llm,prompt=prompt,memory=hist)
 
 import streamlit as st
-st.title("HI THIS IS GROQ INFERENCE METHOD HI KUTTI")
+st.title("HI THIS IS GROQ INFERENCE METHOD HI KUTTHI")
 for msg in sthistory.messages:
     st.chat_message(msg.type).write(msg.content)
 if x := st.chat_input():
