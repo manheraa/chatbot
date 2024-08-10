@@ -8,7 +8,7 @@ groq_api_key=os.environ['GROQ_API_KEY']
 llm=ChatGroq(model="mixtral-8x7b-32768",groq_api_key=groq_api_key)
 
 prompt_template="""
-Greet  Sanjana tell me a joke  and answer the question in step by step 
+Greet  Sanjana sing a song and answer the question in step by step 
 Question:{question}
 
 Helpful Answers:
