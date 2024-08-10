@@ -8,7 +8,7 @@ groq_api_key=os.environ['GROQ_API_KEY']
 llm=ChatGroq(model="mixtral-8x7b-32768",groq_api_key=groq_api_key)
 
 prompt_template="""
-Greet  Vishanavi  and answer the question in step by step
+Greet  Vishanavi  and answer the question in step by step 
 Question:{question}
 
 Helpful Answers:
@@ -19,7 +19,7 @@ hist=ConversationBufferMemory(chat_memory=sthistory)
 chain=LLMChain(llm=llm,prompt=prompt,memory=hist)
 
 import streamlit as st
-st.title("HI Vishanavi")
+st.title("HI Sanjana")
 for msg in sthistory.messages:
     st.chat_message(msg.type).write(msg.content)
 if x := st.chat_input():
